@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    line-height: 1.6; /* Define la altura de línea para mejorar la legibilidad */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el relleno por defecto del navegador */
+    background-color: #f0f0f0; /* Establece un color de fondo claro */
+    color: #333; /* Establece el color del texto */
+}
+
+h1 {
+    color: #8B4513; /* Establece el color marrón para el encabezado */
+    padding: 20px 0; /* Añade espaciado vertical alrededor del encabezado */
+    text-align: center; /* Centra el texto del encabezado */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: #333333; /* Establece un color de fondo oscuro para el menú */
+    text-align: center; /* Centra el contenido del menú */
+}
+
+nav ul li {
+    display: inline-block; /* Muestra los elementos de la lista en una sola línea */
+    position: relative; /* Establece un contexto de posicionamiento para submenús */
+}
+
+nav ul li a {
+    display: block; /* El enlace ocupa todo el espacio del elemento de lista */
+    padding: 15px 20px; /* Añade espaciado interno al enlace */
+    color: #ffffff; /* Establece el color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s; /* Añade una transición suave para el color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el ratón sobre el enlace */
+}
+
+nav ul li ul.submenu {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Posiciona el submenú relativo al elemento padre */
+    top: 100%; /* Coloca el submenú justo debajo del elemento padre */
+    left: 0; /* Alinea el submenú al borde izquierdo del elemento padre */
+    background-color: #495057; /* Establece un color de fondo oscuro para el submenú */
+    padding: 10px; /* Añade espaciado interno al submenú */
+    z-index: 1; /* Asegura que el submenú aparezca sobre otros elementos */
+}
+
+nav ul li:hover ul.submenu {
+    display: block; /* Muestra el submenú al pasar el ratón sobre el elemento padre */
+}
+
+nav ul li ul.submenu li {
+    display: block; /* Muestra los elementos del submenú en bloques */
+    margin-bottom: 5px; /* Añade espaciado inferior entre los elementos del submenú */
+}
+
+nav ul li ul.submenu li a {
+    color: #ffffff; /* Establece el color del texto de los enlaces del submenú */
+    padding: 10px 15px; /* Añade espaciado interno a los enlaces del submenú */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Establece un fondo blanco con opacidad */
+    border-radius: 10px; /* Añade bordes redondeados al contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra al contenedor */
+    margin: 20px auto; /* Añade margen vertical y centra el contenedor horizontalmente */
+    max-width: 800px; /* Define el ancho máximo del contenedor */
+    padding: 20px; /* Añade espaciado interno al contenedor */
+}
+
+h2 {
+    color: #8B4513; /* Establece el color marrón para el segundo encabezado */
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+p, ul {
+    margin: 0 0 20px; /* Añade margen inferior a párrafos y listas */
+}
+
+ul {
+    padding-left: 20px; /* Añade relleno izquierdo a listas */
+}
+
+ul li {
+    margin-bottom: 10px; /* Añade margen inferior a elementos de listas */
+}
+
+ul li strong {
+    color: #333; /* Establece el color del texto en negrita dentro de listas */
+}
+
+img {
+    border: 5px solid;
+    width: 300; height: 200px;
+}

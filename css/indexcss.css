@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente para el texto del cuerpo */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    background-image: url('../imagenes/musica.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    color: #333; /* Color del texto */
+}
+
+header {
+    background: #343a40; /* Color de fondo del encabezado */
+    color: #ffffff; /* Color del texto del encabezado */
+    padding: 20px 0; /* Espaciado vertical para el encabezado */
+    text-align: center; /* Centra el texto del encabezado */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: #343a40; /* Color del fondo del menú */
+    text-align: center; /* Centra el contenido del menú */
+}
+
+nav ul li {
+    position: relative; /* Necesario para el posicionamiento del submenu */
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+}
+
+nav ul li a {
+    display: block; /* Permite que el enlace ocupe todo el área del li */
+    padding: 15px 20px; /* Espaciado interno del enlace */
+    color: #ffffff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo al pasar el ratón */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Color de fondo cuando se pasa el ratón */
+}
+
+nav ul li ul.submenu {
+    display: none; /* Oculta el submenu por defecto */
+    position: absolute; /* Posiciona el submenu de manera absoluta respecto al li */
+    top: 100%; /* Alinea el submenu justo debajo del elemento padre */
+    left: 0; /* Alinea el submenu al borde izquierdo del elemento padre */
+    background-color: #495057; /* Color del fondo del submenu */
+    padding: 10px; /* Espaciado interno del submenu */
+    z-index: 1; /* Asegura que el submenu esté sobre el contenido */
+}
+
+nav ul li:hover ul.submenu {
+    display: block; /* Muestra el submenu cuando se pasa el ratón sobre el elemento padre */
+}
+
+nav ul li ul.submenu li {
+    display: block; /* Muestra los elementos del submenu en bloque */
+    margin-bottom: 5px; /* Espaciado inferior entre los elementos del submenu */
+}
+
+nav ul li ul.submenu li a {
+    color: #ffffff; /* Color del texto de los enlaces del submenu */
+}
+
+.container {
+    padding: 20px; /* Espaciado interno del contenedor */
+}
+
+.container section {
+    margin-bottom: 30px; /* Margen inferior para secciones dentro del contenedor */
+}
+
+h2 {
+    color: #8B4513; /* Color marrón oscuro para el segundo encabezado */
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+p {
+    color: #333; /* Color del texto de los párrafos */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+.container {
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados para un aspecto más estilizado */
+}
